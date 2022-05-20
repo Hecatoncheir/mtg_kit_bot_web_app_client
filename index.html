@@ -7,9 +7,12 @@
 </head>
 <body>
 
+<section id="preview"></section>
+
 <script>
   let initData =window.Telegram.WebApp.initData;
   console.log(initData);
+  document.querySelector("#preview").innerHTML = initData;
 </script>
 
 </body>
