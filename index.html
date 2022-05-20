@@ -8,11 +8,16 @@
 <body>
 
 <section id="preview"></section>
+<section id="location"></section>
 
 <script>
   let initData =window.Telegram.WebApp.initData;
   console.log(initData);
   document.querySelector("#preview").innerHTML = initData;
+
+  let href = window.location.href;
+  console.log(href);
+  document.querySelector("#location").innerHTML =href;
 </script>
 
 </body>
